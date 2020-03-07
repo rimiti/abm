@@ -1,0 +1,29 @@
+{
+  "name": "@rimiti/adblock-modal",
+  "version": "0.0.0",
+  "description": "Detects AdBlockers and display an unclosable modal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rimiti/adblock-modal.git"
+  },
+  "keywords": [
+    "adblock",
+    "ads",
+    "blockers",
+    "blocker",
+    "adsense",
+    "advertising",
+    "advertiser",
+    "killer"
+  ],
+  "author": "Dimitri DO BAIRRO <dimitri.dobairro@dimsolution.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rimiti/adblock-modal/issues"
+  },
+  "homepage": "https://github.com/rimiti/adblock-modal#readme"
+}
