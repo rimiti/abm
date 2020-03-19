@@ -15,6 +15,8 @@ $ yarn add @rimiti/abm
 
 ## Demo
 
+[Live demo](https://rimiti.github.io/abm/demo/)
+
 <!-- ![Example](https://github.com/rimiti/abm/blob/master/demo/demo.png) -->
 <img src="https://github.com/rimiti/abm/blob/master/demo/demo.png" height="550">
 
