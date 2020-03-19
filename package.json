@@ -8,7 +8,8 @@
     "prebuild": "yarn clean",
     "build": "mkdir dist && browserify ./src/index.js | uglifyjs -cm > ./dist/index.js && cp ./dist/index.js ./demo/index.js && cp ./src/style.css ./dist/style.css && cp ./src/style.css ./demo/style.css",
     "build:dev": "yarn clean && mkdir dist && browserify ./src/index.js -o ./dist/index.js && cp ./dist/index.js ./demo/index.js && cp ./src/style.css ./dist/style.css && cp ./src/style.css ./demo/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "yarn build"
   },
   "repository": {
     "type": "git",
