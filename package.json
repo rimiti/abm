@@ -2,8 +2,12 @@
   "name": "@rimiti/adblock-modal",
   "version": "0.0.0",
   "description": "Detects AdBlockers and display an unclosable modal.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "clean": "rm -rf ./dist",
+    "prebuild": "yarn clean",
+    "build": "mkdir dist && browserify ./src/index.js | uglifyjs -cm > ./dist/index.js && cp ./dist/index.js ./demo/index.js && cp ./src/style.css ./dist/style.css && cp ./src/style.css ./demo/style.css",
+    "build:dev": "yarn clean && mkdir dist && browserify ./src/index.js -o ./dist/index.js && cp ./dist/index.js ./demo/index.js && cp ./src/style.css ./dist/style.css && cp ./src/style.css ./demo/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +29,12 @@
   "bugs": {
     "url": "https://github.com/rimiti/adblock-modal/issues"
   },
-  "homepage": "https://github.com/rimiti/adblock-modal#readme"
+  "homepage": "https://github.com/rimiti/adblock-modal#readme",
+  "dependencies": {
+    "fuckadblock": "3.2.1"
+  },
+  "devDependencies": {
+    "browserify": "16.5.0",
+    "uglify-js": "^3.8.0"
+  }
 }
